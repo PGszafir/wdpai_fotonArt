@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #13FFA6 0%, #61D2E9 100%) 0% 0% no-repeat padding-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    text-align: center;
+}
+.login-container {
+    width: 50%;
+}
+
+form.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #0000003D, 0px 3px 6px #00000029;
+    border-radius: 60px;
+}
+
+button {
+    width: 50%;
+    border: none;
+    color: white;
+    margin: 1em;
+    line-height: 2.5em;
+
+    background: linear-gradient(180deg, #13FFA6 0%, #61D2E9 100%);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 19px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid lightseagreen;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+}
+
+@media only screen and (max-device-width: 420px) {
+    .container {
+        flex-direction: column;
+    }
+    * {
+        font-size: 36px;
+    }
+    .login-container, .logo {
+        width: 100%;
+    }
+    form.login {
+        margin: auto;
+    }
+    img {
+        height: 7em;
+        //margin: 2em;
+    }
+}
+
+.base-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+nav {
+    width: 20vw;
+    height: 100%;
+    background: transparent linear-gradient(180deg, #13FFA6 0%, #61D2E9 100%) 0% 0% no-repeat padding-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    width: 80vw;
+    height: 100%;
+}
+
+nav> img {
+    width: 80%;
+    margin: 2em auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2em;
+}
+
+li i {
+    font-size: 2em;
+}
+
+.button {
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 0em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: white;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}

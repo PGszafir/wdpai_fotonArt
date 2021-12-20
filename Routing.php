@@ -28,7 +28,7 @@ class Router {
 
 */
 
-?php
+
 
 
 class Router {
@@ -45,3 +45,5 @@ class Router {
         echo "method run ".$url;
     }
 }
+
+//?php
