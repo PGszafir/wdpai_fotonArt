@@ -24,10 +24,12 @@ section {
 }
 
 .albums>div>div>p{
+    margin: 1em;
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
 }
 .albums>div>div>h2{
+    margin: 1em;
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
 }
