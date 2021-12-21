@@ -7,18 +7,43 @@ section {
 }
 
 .albums>div>img {
-    height: 50%;
+    height: 70%;
     width: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
 
 .albums>div>div {
-    height: 50%;
+    height: 30%;
     color: #61D2E9;
-    margin: 1em;
+    margin: 0em;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
+.albums>div>div>p{
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+.albums>div>div>h2{
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+
+.albums>div {
+    border: 1px solid gold;
+    border-radius: 1em 1em 5em 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
