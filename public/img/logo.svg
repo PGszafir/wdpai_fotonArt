@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148.75339mm"
+   height="39.079842mm"
+   viewBox="0 0 148.75339 39.079842"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/pgszafir/snap/inkscape/9256/bitmapa.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.60221134"
+     inkscape:cx="200.92614"
+     inkscape:cy="56.458585"
+     inkscape:window-width="1920"
+     inkscape:window-height="1164"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(96.726468,55.210914)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:36.802px;line-height:1.25;font-family:sans-serif;fill:#FFFFFF;fill-opacity:1;stroke:none;stroke-width:0.920051"
+       x="-97.571045"
+       y="-16.652195"
+       id="text3597"><tspan
+         sodipodi:role="line"
+         id="tspan3595"
+         style="fill:#e6e6e6;stroke-width:0.920051"
+         x="-97.571045"
+         y="-16.652195">fotonArt</tspan></text>
+    <path
+       style="fill:#ffb380;fill-rule:evenodd"
+       id="path10528"
+       sodipodi:type="arc"
+       sodipodi:cx="-26.106707"
+       sodipodi:cy="-48.403049"
+       sodipodi:rx="6.8078647"
+       sodipodi:ry="6.8078647"
+       sodipodi:start="6.2485051"
+       sodipodi:end="6.1836281"
+       sodipodi:arc-type="slice"
+       d="m -19.302936,-48.6391 a 6.8078647,6.8078647 0 0 1 -6.457404,7.035098 6.8078647,6.8078647 0 0 1 -7.138903,-6.342455 6.8078647,6.8078647 0 0 1 6.225839,-7.24083 6.8078647,6.8078647 0 0 1 7.340851,6.107585 l -6.774154,0.676653 z" />
+  </g>
+</svg>

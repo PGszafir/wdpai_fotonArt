@@ -113,14 +113,78 @@ li i {
 
 .button {
     border: none;
-    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    //border-bottom: 2px solid white;
     margin: 0em;
     text-align: center;
     letter-spacing: 0.7px;
     color: white;
-    width: 100%;
+    width: 80%;
 }
 
 ul {
     list-style-type: none;
+    color: white;
+    height: 100%;
+    width: calc(100%- 40px);
+    position: relative;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+li:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+}
+
+.fa, .fas {
+    width: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-bottom: 1px solid gold;
+}
+
+.add-album {
+    background-color: #13FFA6;// 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #61D2E9;
+    border-radius: 1em;
+    color: white;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 20%;
+}
+
+.add-album > i {
+    padding: 1em;
+}
+
+.search-bar {
+    width: 70%;
+}
+
+.search-bar>form>input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #61D2E9;
+    border: 1px solid #13FFA6;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    margin: 0;
+    box-sizing: border-box;
 }
