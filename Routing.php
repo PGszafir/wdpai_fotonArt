@@ -1,4 +1,32 @@
 <?php
+
+
+require 'Routing.php';
+
+
+class Routing {
+    public static $routes;
+
+    public static function get($url, $controller) {
+        self::$routes[$url] = $controller;
+    }
+
+    public static function run($url){
+        $controler = new DeflautController();
+
+        if($url === 'login'){
+            $controler->'login';
+        }
+
+        if($url === 'dashboard'){
+            $controler-> 'dashboard';
+        }
+        echo "method run ".$url;
+    }
+}
+
+
+
 /*
 require_once 'src/controllers/DefaultController.php';
 
@@ -27,23 +55,3 @@ class Router {
 
 
 */
-
-
-
-
-class Router {
-    public static function run($url){
-        $controler = new DeflautController()
-        
-        if($url === 'login'){
-            $controler->'login';
-        }
-
-        if($url === 'dashboard'){
-            $controler-> 'dashboard';
-        }
-        echo "method run ".$url;
-    }
-}
-
-//?php
