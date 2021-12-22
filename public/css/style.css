@@ -62,8 +62,11 @@ input {
     * {
         font-size: 36px;
     }
-    .login-container, .logo {
+    .logo {
         width: 100%;
+    }
+    .login-container {
+        width: 80%;
     }
     form.login {
         margin: auto;
