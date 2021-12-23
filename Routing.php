@@ -1,8 +1,8 @@
 <?php
 
 
-require 'Routing.php';
-
+//require 'Routing.php';
+require_once 'src/controllers/DefaultController.php';
 
 class Routing {
     public static $routes;
@@ -12,23 +12,24 @@ class Routing {
     }
 
     public static function run($url){
-        $controler = new DeflautController();
+        $action = explode("/", $url)[0];
+        //$controler = new DeflautController();
 
-        if($url === 'login'){
-            $controler->'login';
+        if(!array_key_exists($action, self::$routes)){
+            die("Wrong url!");
         }
 
-        if($url === 'dashboard'){
-            $controler-> 'dashboard';
-        }
-        echo "method run ".$url;
+        $controller = self::$routes[$action];
+        $object = new $controller;
+
+        $object->$action();
     }
 }
 
 
 
 /*
-require_once 'src/controllers/DefaultController.php';
+
 
 class Router {
 

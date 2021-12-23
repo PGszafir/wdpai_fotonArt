@@ -6,13 +6,11 @@ class DefaultController extends AppController {
 
     public function index()
     {
-        $this->render('login');
+            $this->render('login');
     }
 
-    public function dashboard()
+    public function projects()
     {
-        //todo get data from database
-        $items = ['kurtka','telefon','szafa'];
-        $this->render('dashboard');
+        $this->render('projects');
     }
 }
