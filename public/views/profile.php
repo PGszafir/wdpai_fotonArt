@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="public/css/profile.css">
     <title>user-Profile</title>
 </head>
 <body>
