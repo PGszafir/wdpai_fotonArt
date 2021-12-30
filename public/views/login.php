@@ -12,10 +12,17 @@
         </div>
 
         <div class="login-container" style="width: 50%">
-            <form class="login">
-                <input name="Login" type="text" placeholder="email@email.com">
+            <form class="login" action="login" method="POST">
+                <div class="messages">
+                    <?php if(isset($messages)){
+                        foreach ($messages as $message)
+                        echo $message;
+                    }
+                    ?>
+                </div>
+                <input name="email" type="text" placeholder="email@email.com">
                 <input name="password" type="password" placeholder="password">
-                <button>LOGIN</button>
+                <button type="submit">LOGIN</button>
             </form>
         </div>
     </div>

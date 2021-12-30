@@ -9,7 +9,7 @@
 <body>
     <div class="base-container">
         <nav>
-            <img src="../img/logo.svg">
+            <img src="public/img/logo.svg">
             <ul>
                 <li>
                     <i class="far fa-user-circle"></i>
