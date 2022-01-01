@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/profile.css">
     <link rel="stylesheet" type="text/css" href="public/css/profile.css">
+    <link rel="shortcut icon" type="image/png" href="public/img/img.png">
     <title>user-Profile</title>
 </head>
 <body>

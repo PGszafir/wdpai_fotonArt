@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <link rel="shortcut icon" type="image/png" href="public/img/img.png">
+    <link rel="shortcut icon" type="image/png" href="public/img/fA.png">
     <title>Login Page</title>
 </head>
 <body>

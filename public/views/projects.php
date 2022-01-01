@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/projects.css">
+    <link rel="shortcut icon" type="image/png" href="public/img/fA.png">
     <script src="https://kit.fontawesome.com/27961df1c1.js" crossorigin="anonymous"></script>
     <title>PROJECTS</title>
 </head>
