@@ -46,3 +46,9 @@ main {
     margin: 1em;
     font-size: xx-large;
 }
+
+.between {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
