@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="public/css/profile.css">
     <title>user-Profile</title>
 </head>
 <body>
     <div class="base-container">
         <nav>
-            <img src="../img/logo.svg">
+            <img src="public/img/logo.svg">
             <ul>
                 <li>
                     <i class="far fa-user-circle"></i>
