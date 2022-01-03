@@ -1,25 +1,50 @@
 <?php
 
-require_once 'src/controllers/DefaultController.php';
+class Project
+{
+    private $title;
+    private $description;
+    private $image;
 
-class Router {
+    public function __construct($title, $description, $image)
+    {
+        $this->title = $title;
+        $this->description = $description;
+        $this->image = $image;
 
-    public static $routes;
 
-    public static function get($url, $view) {
-        self::$routes[$url] = $view;
+
     }
 
-    public static function run ($url) {
-        $action = explode("/", $url)[0];
-        if (!array_key_exists($action, self::$routes)) {
-            die("Wrong url!");
-        }
-
-        $controller = self::$routes[$action];
-        $object = new $controller;
-        $action = $action ?: 'index';
-
-        $object->$action();
+    public function getTitle(): string
+    {
+        return $this->title;
     }
+
+    public function setTitle(string $title)
+    {
+        $this->title = $title;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description)
+    {
+        $this->description = $description;
+    }
+
+    public function getImage(): string
+    {
+        return $this->image;
+    }
+
+    public function setImage(string $image)
+    {
+        $this->image = $image;
+    }
+
+
 }

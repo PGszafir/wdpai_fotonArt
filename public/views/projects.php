@@ -51,10 +51,10 @@
             </header>
             <section class="albums">
                 <div id="album-1">
-                    <img src="public/img/uploads/img1.jpg">
+                    <img src="public/uploads/<?= $project->getImage() ?>">
                     <div>
-                        <h2>Title</h2>
-                        <p>description</p>
+                        <h2><?= $project->getTitle() ?></h2>
+                        <p><?= $project->getDescription() ?></p>
                         <div class="social-section">
                             <i class="fas fa-heart">200</i>
                             <i class="fas fa-minus-square">21</i>
