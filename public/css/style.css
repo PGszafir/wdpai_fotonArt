@@ -1,11 +1,18 @@
 body {
     margin: 0;
+    --color1:#13FFA6;
+    --color2:#61D2E9;
+
+    --darkColor1: #575e57;
+    --darkColor2: #394b4f;
 }
+
+
 
 .container {
     width: 100vw;
     height: 100vh;
-    background: transparent linear-gradient(180deg, #13FFA6 0%, #61D2E9 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%) 0% 0% no-repeat padding-box;
 
     display: flex;
     flex-direction: row;
