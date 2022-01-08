@@ -2,6 +2,7 @@
 
 require_once 'AppController.php';
 require_once __DIR__.'/../models/Project.php';
+require_once __DIR__.'/../repository/ProjectRepository.php';
 
 class ProjectController extends AppController
 {
@@ -10,6 +11,14 @@ class ProjectController extends AppController
     const UPLOAD_DIRECTORY = '/../public/uploads/';
 
     private $messages = [];
+    private $projectRepository;
+
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->projectRepository = new ProjectRepository();
+    }
 
 
     public function addProject()
@@ -22,6 +31,7 @@ class ProjectController extends AppController
             );
 
             $project = new Project($_POST['title'], $_POST['description'], $_FILES['file']['name']);
+            $this->projectRepository->addProject($project);
 
             return $this->render('projects', ['messages' => $this->messages, 'project' => $project]);
         }
