@@ -42,4 +42,26 @@ class ProjectRepository extends Repository
             $date->format('Y-m-d')
         ]);
     }
+
+    public function getProjects(): array
+    {
+        $result = [];
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM projects
+        ');
+        $stmt->execute();
+        $projects = $stmt->fetchAll();
+
+        foreach ($projects as $project){
+            $result[] = new Project(
+                $project['title'],
+                $project['description'],
+                $project['img'],
+                //$projects['likes'],
+                //$project['dislikes']
+            );
+        }
+
+        return $result;
+    }
 }

@@ -20,6 +20,11 @@ class ProjectController extends AppController
         $this->projectRepository = new ProjectRepository();
     }
 
+    public function projects()
+    {
+        $projects = $this->projectRepository->getProjects();
+        $this->render('projects',['projects' => $projects]);
+    }
 
     public function addProject()
     {
@@ -31,9 +36,13 @@ class ProjectController extends AppController
             );
 
             $project = new Project($_POST['title'], $_POST['description'], $_FILES['file']['name']);
+            //$this->projectRepository->
             $this->projectRepository->addProject($project);
 
-            return $this->render('projects', ['messages' => $this->messages, 'project' => $project]);
+            return $this->render('projects', [
+                'projects' => $this->projectRepository->getProjects(),
+                'messages' => $this->messages, 'project' => $project
+            ]);
         }
 
         $this->render('add-project',  ['messages' => $this->messages]);
