@@ -198,3 +198,9 @@ header {
     margin: 0;
     box-sizing: border-box;
 }
+
+.no-valid {
+    border: 3px solid #ce0037;
+    border-radius: 1em;
+    outline: none;
+}

@@ -2,6 +2,8 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="public/img/fA.png">
+    <script type="text/javascript" src="../public/js/script.js" defer></script>
     <title>REGISTER</title>
 </head>
 
