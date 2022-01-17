@@ -26,6 +26,11 @@ class ProjectController extends AppController
         $this->render('projects',['projects' => $projects]);
     }
 
+    public function search()
+    {
+        //todo
+    }
+
     public function addProject()
     {
         if($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name'])  && $this->validate($_FILES['file'])){

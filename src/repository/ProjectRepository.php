@@ -18,13 +18,29 @@ class ProjectRepository extends Repository
         if($project == false){
             return null; //!!!
         }
-
         return new Project(
             $project['title'],
             $project['description'],
             $project['img']
         );
     }
+
+    public function getProjectByTitle(string $searchString): ?Project
+    {
+        $searchString = '%'.strtolower($searchString).'%';
+
+
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM public.projects WHERE LOWER(title) LIKE :search 
+        ');
+        $stmt->bindParam(':search',$searchString,PDO::PARAM_STR);
+        $stmt->execute();
+
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
 
     public function addProject(Project $project)
     {
