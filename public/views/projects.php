@@ -41,9 +41,7 @@
         <main>
             <header>
                 <div class="search-bar">
-                    <form>
                         <input placeholder="search album">
-                    </form>
                 </div>
                 <div class="add-album">
                     <i class="fas fa-plus-circle"></i>
@@ -72,6 +70,18 @@
         </main>
     </div>
 </body>
-
-
 </html>
+
+<template id="project-template">
+    <div id="album-1">
+        <img src="public/uploads/img">
+        <div>
+            <h2>title</h2>
+            <p>description</p>
+            <div class="social-section">
+                <i class="fas fa-heart">0</i>
+                <i class="fas fa-minus-square">0</i>
+            </div>
+        </div>
+    </div>
+</template>
