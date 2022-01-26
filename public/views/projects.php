@@ -59,7 +59,7 @@
                         <p><?= $project->getDescription(); ?></p>
                         <div class="social-section">
                             <i class="fas fa-heart"><?= $project->getLikes(); ?></i>
-                            <i class="fas fa-minus-square"><?= $project->getLikes(); ?></i>
+                            <i class="fas fa-minus-square"><?= $project->getDislikes(); ?></i>
                         </div>
                     </div>
                 </div>

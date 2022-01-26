@@ -44,4 +44,5 @@ function createProject(project) {
     const dislike = clone.querySelector(".fa-minus-square");
     dislike.innerText = project.dislike;
 
+    projectContainer.appendChild(clone);
 }

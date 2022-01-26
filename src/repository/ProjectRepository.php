@@ -31,7 +31,7 @@ class ProjectRepository extends Repository
 
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM public.projects WHERE LOWER(title) LIKE :search 
+            SELECT * FROM public.projects WHERE LOWER(title) LIKE :search OR LOWER(description) LIKE :search 
         ');
         $stmt->bindParam(':search',$searchString,PDO::PARAM_STR);
         $stmt->execute();
@@ -73,8 +73,8 @@ class ProjectRepository extends Repository
                 $project['title'],
                 $project['description'],
                 $project['img'],
-                //$projects['likes'],
-                //$project['dislikes']
+                $projects['likes'],
+                $project['dislikes']
             );
         }
 
