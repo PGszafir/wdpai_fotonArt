@@ -5,7 +5,7 @@ search.addEventListener("keyup",function (event){
     if(event.key === "Enter"){
         event.preventDefault();
         
-        const data = (search: this.value);
+        const data = {search: this.value};
         fetch("/search",{
             method: "POST",
             headers: {

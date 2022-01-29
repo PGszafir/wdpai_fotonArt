@@ -50,7 +50,6 @@
 
             </header>
             <section class="albums">
-                <?php var_dump($projects) ?>
                 <?php foreach ($projects as $project): ?>
                 <div id="album-1">
                     <img src="public/uploads/<?= $project->getImage() ?>">
@@ -58,14 +57,67 @@
                         <h2><?= $project->getTitle(); ?></h2>
                         <p><?= $project->getDescription(); ?></p>
                         <div class="social-section">
-                            <i class="fas fa-heart"><?= $project->getLikes(); ?></i>
-                            <i class="fas fa-minus-square"><?= $project->getDislikes(); ?></i>
+                            <i class="fas fa-heart">1</i>
+                            <i class="fas fa-minus-square">1</i>
                         </div>
                     </div>
                 </div>
                 <?php endforeach; ?>
-
-                </div>g
+                <div id="album-2">
+                    <img src="public/img/uploads/klepsydra.png">
+                    <div>
+                        <h2>Title</h2>
+                        <p>description</p>
+                        <div class="social-section">
+                            <i class="fas fa-heart">200</i>
+                            <i class="fas fa-minus-square">21</i>
+                        </div>
+                    </div>
+                </div>
+                <div id="album-3">
+                    <img src="public/img/uploads/bianco.jpg">
+                    <div>
+                        <h2>Title</h2>
+                        <p>description</p>
+                        <div class="social-section">
+                            <i class="fas fa-heart">200</i>
+                            <i class="fas fa-minus-square">21</i>
+                        </div>
+                    </div>
+                </div>
+                <div id="album-4">
+                    <img src="public/img/uploads/img1.jpg">
+                    <div>
+                        <h2>Title</h2>
+                        <p>description</p>
+                        <div class="social-section">
+                            <i class="fas fa-heart">200</i>
+                            <i class="fas fa-minus-square">21</i>
+                        </div>
+                    </div>
+                </div>
+                <div id="album-5">
+                    <img src="public/img/uploads/img1.jpg">
+                    <div>
+                        <h2>Title</h2>
+                        <p>description</p>
+                        <div class="social-section">
+                            <i class="fas fa-heart">200</i>
+                            <i class="fas fa-minus-square">21</i>
+                        </div>
+                    </div>
+                </div>
+                <div id="album-6">
+                    <img src="public/img/uploads/img1.jpg">
+                    <div>
+                        <h2>Title</h2>
+                        <p>description</p>
+                        <div class="social-section">
+                            <i class="fas fa-heart">200</i>
+                            <i class="fas fa-minus-square">21</i>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
